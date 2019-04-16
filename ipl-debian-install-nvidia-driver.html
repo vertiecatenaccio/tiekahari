@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Debian install nvidia driver - kuepahded.codelearn.org</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Logo -->
+                        <h1><a href="/" id="logo">kuepahded.codelearn.org</a></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-12-medium">
+
+                        <!-- Main Content -->
+                        <section>
+                            <header>
+                                <h2>Debian install nvidia driver</h2>
+                            </header>
+                            <p> Разработчики операционной системы Debian, не очень любят, не свободное программное обеспечение, так и с драйверами Nvidia, которые являются проприетарными, то есть, не свободными и с закрытым. Погуглил с телефона. и нашёл что можно 340 поставить как apt install nvidia-legacy-340xx-driver-bin. Поставил,сделал ещё раз nvidia-xconfigure , перезагрузился, тоже самое. 
+terminal server install. terminal server thin clien eror. Блокировка доступа к сети интернет локальными политиками  Захват и передача ролей FSMO. Настройка порт форвардинга в Windows. Отказ в доступе и другие ошибки при попытке доступа к файлам. · This video is unavailable. Watch Queue Queue. Watch Queue Queue. Debian+проприетарный драйвер NVIDIA debian, install, nvidia. 0 1. Имеется материнка GA-M85M-US2H с интегрированной GeForce 8200, и дискретная GeForce 9600 GT. Ось - Debian 8 + mate. Проблема с установкой официального драйвера нвидии. Устанавливая. dep: nvidia-installer-cleanup cleanup after driver installation with the nvidia-installer dep: nvidia-legacy-check (>= 343) check for NVIDIA GPUs requiring a legacy driver. Hello! I installed nvidia driver using instructions from wiki official for debian 9 but I can't start startx so I can login only from terminal. ( https://wiki.debian.org/NvidiaGraphicsDrivers (https://wiki.debian.org/NvidiaGraphicsDrivers)) I run nvidia-xconfig for make xorg (I have optimus hybrid gpu but I wanna use only nvidia GPU). I have i5-8250U and Geforce MX130. This is my xorg log, can you help me to fix this problem? Thanks! \ 82.799\ X.Org X Server 1.19.2 Releas. 
+· Перепробовал aptitude purge ~i~nnvidia nvidia-installer --uninstall из скрипта При повторной установке все равно вылезает такая ошибка. This is the second time I've tried and failed to install proprietary Nvidia drivers on a fresh debian install, and it still will not work. I've tried going directly through apt with `sudo apt-get install nvidia-driver` and using the stretch backports, but both give me the same error message (on a fresh install of debian 9): Some packages could not be installed. This may mean that you have requested an impossible situation or if you are using the unstable distribution. sudo apt-get install nvidia-driver После этого вам останется только согласиться с тем, что вы действительно хотите установить всё это «добро» и ждать окончания установки. Hello everyone, as you can probably tell by the title, I am having trouble with installing graphics drivers for my XPS. I've tried the following methods on both Debian 9.5 and 9.6 KDE but I result with the same issue when booting - a black screen. These are the following dependencies I've installed and have failed: nvidia-driver nvidia-kernel-dkms (I've also tried installing them individually and together as a pair) Any help on this issue would be appreciated. Thank I need to install the latest 4xx drivers on Debian but seems like Debian doesn't support PRIME. Without bumblebee I can't get my Nvidia gpu work on any Debian release (Unstable, Testing and Stable) Deepin OS which is based on Debian, added PRIME support in the 15.7 release and I don't have any clue how to add that support to Debian. Hi all, Have been trying to follow the official Debian wiki guide for installing the latest nvidia drivers on my system (version 390) but keep failing and returning errors. Also if it helps, yes I have an NVIDIA card, yes it is detected, yes it can handle version 390 (it is a 1050ti) and I have even successfully installed the 390 drivers on it in the past, but that was a previous install a while ago now and I can't remember what guide/webpage I followed. For clarity I will include everything. Hi! I tried too much for install debian driver on Debian 9. I can't run Debian with nvidia prop. driver. X cannot start. What i did: Installed Debian 9 netinst without anything (expect base utils.) So i had no X,DE etc. Installed X11. Installed linux headers, nvidia 390. Installed Kwin, KDE. Rebooted, x didn't start. Ran nvidia-xconfig, rebooted again. Not accessed to gui automatically. So i ran startx, and failed. My 10 least of try to work Debian with nvidia 
+Hi guys! I am getting tired of my Win 10 and would like to switch to Linux, hopefully completely, on my desktop. What I want to ask is how good is the state of gaming on Linux? Do I need Steam for that? Can Wine handle most Win games? Would Linux be sufficient to play games like Souls series, Nier Automata, Devil May Cry 5, Sekiro? I am not into battle royals or online (except maybe in Souls games or FPSs like Assault Cube). Also, I want to upgrade my GPU for some of these games either I need to create a very, very, very minimalist version of Linux for an arcade game but I do not know where to start. I need Jack audio server, X server, working Ethernet, some GPU drivers and nothing else. (Maybe Plymouth boot if possible) Is there a version of Linux that only has the bare minimum so I can add the rest? Maybe Debian with no packages? EDIT: Thank you everyone for your suggestions, for now I am going to be using Arch Linux. Heya everyone, I'm a Debian stable user for some time and everything looks kind of. old, so I want to move to Debian Unstable. First I wanted to go to Testing then I found out Unstable is actually better than testing so. How would it work as my daily driver? How stable it actually. 1. Install nvidia\-detect \- sudo apt install nvidia\-detect y ejecutarlo 2. Instalar el paquete recomendado \- nvidia\-legacy\-340xx\-driver 3. sudo apt install nvidia\-legacy\-340xx\-driver 4. Reboot 
+Hi - I was wondering if people would mind talking a bit about their update process for day-to-day work with Void. It's been a long time since I gave a rolling release OS a spin, and I haven't seen anything explicit in the wiki about this. Do you run/check for system and package updates daily, with `xbps` or some other utility? Thanks I am about to install a SSD drive and I am thinking of switching for a different distro. Right now I'm on Xubuntu and I feel like I need something different. I was thinking MX Linux 18. Gaming is very important so I want to have as much support as Ubuntu have. Should I stay or go for Debian? Thanks. i have a gtx 770 and it has horrible drivers for gaming (or at least i can't find a good one) i want to upgrade to a new gpu. And i want to know which between Amd and Nvidia has better linux drivers ? btw i use kubuntu. I tried every way, every version, still nothing. I always have to boot in CLI and remove xorg.conf/reconfigure xorg, and uninstall nvidia or I just don't have any way to boot in my desktop. I'm on mint, and I can't help noticing how far behind I am on releases. I'm on 18.04 Ubuntu with a 4.15 kernel and 390 nvidia drivers to start with. Seems to be not quite bleeding edge. I started on mint because durr beginner, but I'm more confident now, though I want to stay in the debverse as I'm accustomed to it. I'd really like to go with Debian sid, but everyone seems to be trashing it, so should I just do Ubuntu not-LTS-whatever-its-called then? Edit: I'm not completely averse to manja. After my current OS, Manjaro, pooped its pants after an update for the 3rd time, I finally had enough of almost having a panic attack because I almost updated my system without reading every single post in the forums and enough of a distro that has an update in its so called "Stable" branch that borks your x session. The idea of having a stable operating system and a few end-user focused applications on a newer version via Backports sounds like an ideal solution for what I want as a operating. Hi, I have an MSI Z390 Motherboard and an NVIDIA RTX 2070, can I get debian running using the nonfree images and will I be able to set up my proprietary drivers? Edit: I have decent Linux experience. I tried Debian and Ubuntu, because I'm used to work with those. After fresh installation of system I installed Nvidia drivers and after reboot there's only TTY. I tried to start login manager (LightDM) manually, but there was an error. I think it might be bad configuration after changing driver from Xorg to Nvidia driver. I was looking for some solutions online, but didn't found something usable (at least for me). Well, thanks for any future answers. </p>
+                        </section>
+
+                    </div>
+                    <div class="col-3 col-12-medium">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <header>
+                                <h2>Links to Important Stuff</h2>
+                            </header>
+                            <ul class="link-list">
+                                <li><a href="ipl-shema-sborki-detskaya-miya.html">Схема сборки детская мийа</a></li>
+                                <li><a href="ipl-skachat-muzyku-sevinch-muminova-vse-pesni.html">Скачать музыку севинч муминова все песни</a></li>
+                                <li><a href="ipl-shablony-dlya-genealogicheskogo-dereva.html">Шаблоны для генеалогического дерева</a></li>
+                                <li><a href="ipl-interer-magazin-zhurnal.html">Интерьер магазин журнал</a></li>
+                                <li><a href="ipl-gold-edition-farming-simulator.html">Gold edition farming simulator</a></li>
+                                <li><a href="ipl-bmin-akkordy.html">Bmin аккорды</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header>
+                                <h2>Links</h2>
+                            </header>
+                            <ul class="link-list"></ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+
+                        <!-- Links -->
+                        <section>
+                            <h2>Links to Important Stuff</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="ipl-kelty-kniga-skachat-besplatno.html">Кельты книга скачать бесплатно</a></li>
+                                            <li><a href="ipl-skachat-assasin-krid-roug-ot-mehanikov.html">Скачать ассасин крид роуг от механиков</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="ipl-prezentaciya-2-klass-chislo-glagola.html">Презентация 2 класс число глагола</a></li>
+                                            <li><a href="ipl-gdz-po-angliyskomu-yazyku-afanasevoy.html">Гдз по английскому языку афанасьевой</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="ipl-lyuba-lyubov-film-skachat.html">Люба любовь фильм скачать</a></li>
+                                            <li><a href="ipl-gdz-kontrolnye-raboty-algebra-9-klass.html">Гдз контрольные работы алгебра 9 класс</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="ipl-spravka-o-platezhesposobnosti-obrazec.html">Справка о платежеспособности образец</a></li>
+                                            <li><a href="ipl-.html">Бланк акту виконаних робіт</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="col-4 col-12-medium imp-medium">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2>An Informative Text Blurb</h2>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            &copy; Untitled. All rights reserved.</a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        new Image().src = "//counter.yadro.ru/hit;jquery?r" +
+            escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                    screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+            ";h" + escape(document.title.substring(0, 150)) +
+            ";" + Math.random();
+    </script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
